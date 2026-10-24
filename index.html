@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kayu Perkasa Industry | Profil dan Pemasaran Hasil Olahan Kayu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{--base:#e6d2b5;--surface:#f3e6d0;--ink:#2b190c;--muted:#5e4430;--dark:#3a2212;--mid:#a47649;--maroon:#7b1e2b;--line:#c9ad88;--on-dark:#f3e6d0;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--base:#2a1a0f;--surface:#3a2616;--ink:#f3e6d0;--muted:#cdb48f;--dark:#1b0f07;--mid:#c9975f;--maroon:#c2475a;--line:#5a3f28}}
+:root[data-theme="dark"]{--base:#2a1a0f;--surface:#3a2616;--ink:#f3e6d0;--muted:#cdb48f;--dark:#1b0f07;--mid:#c9975f;--maroon:#c2475a;--line:#5a3f28}
+html{scroll-behavior:smooth;scroll-padding-top:5rem;height:100%}
+body{background:var(--base);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-weight:500;line-height:1.6}
+h1,h2,h3,h4,.disp{font-weight:900;letter-spacing:-.025em;line-height:1.05}
+b,strong,dt,label{font-weight:700}
+.card{background:var(--surface);border:2px solid var(--dark)}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.4rem;font-weight:800;border-radius:.4rem;border:2px solid var(--dark);cursor:pointer;transition:transform .12s}
+.btn:active{transform:scale(.97)}
+.btn-dark{background:var(--dark);color:var(--on-dark)}.btn-dark:hover{background:#523118}
+.btn-mid{background:var(--mid);color:#1f1208}.btn-mid:hover{filter:brightness(1.08)}
+.btn-maroon{background:var(--maroon);color:#fff;border-color:var(--maroon)}
+.btn-line{background:transparent;color:inherit;border-color:currentColor}
+.inp{width:100%;padding:.7rem .85rem;border:2px solid var(--dark);border-radius:.4rem;background:#fbf4e6;color:#2b190c;font-weight:600}
+.chip{padding:.4rem .9rem;border-radius:.4rem;border:2px solid var(--dark);font-weight:700;font-size:.875rem;background:var(--surface);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--dark);color:var(--on-dark)}
+.badge{display:inline-block;padding:.2rem .6rem;border-radius:.3rem;font-size:.75rem;font-weight:800;border:2px solid}
+.b-pending{color:var(--maroon);border-color:var(--maroon)}.b-done{background:var(--dark);color:var(--on-dark);border-color:var(--dark)}
+.stripe{border-top:6px solid var(--maroon)}
+.rings{background:repeating-radial-gradient(circle at 88% 115%,transparent 0 22px,rgba(164,118,73,.35) 22px 25px)}
+:focus-visible{outline:3px solid var(--maroon);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header id="siteHeader" class="sticky top-0 z-40" style="background:var(--dark);color:var(--on-dark);padding-top:env(safe-area-inset-top,0px)">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="#beranda" class="disp text-xl flex items-center gap-2"><span style="width:14px;height:14px;background:var(--maroon);display:inline-block;border-radius:50%;border:3px solid var(--mid)"></span>KAYU PERKASA</a>
+    <nav class="hidden md:flex gap-6 text-sm font-bold" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a><a href="#profil">Profil</a><a href="#produk">Produk</a><a href="#layanan">Layanan</a><a href="#legalitas">Legalitas</a><a href="#kontak">Kontak</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a id='hello' href='#permintaan' class='hidden font-bold text-sm truncate max-w-[8.5rem] sm:max-w-xs' title='Lihat permintaan saya'></a><button id='authBtn' class='btn btn-line !py-2 !px-4 text-sm'>Masuk</button>
+      <button id="menuBtn" class="md:hidden p-2" aria-label="Buka menu" aria-expanded="false"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+  <nav id="mobileNav" class="hidden md:hidden px-4 py-3 flex flex-col gap-3 text-sm font-bold border-t" style="border-color:#5a3a20">
+    <a href="#tentang">Tentang</a><a href="#profil">Profil</a><a href="#produk">Produk</a><a href="#layanan">Layanan</a><a href="#legalitas">Legalitas</a><a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<!-- ================= HALAMAN UTAMA ================= -->
+<div id="vHome">
+<section id="beranda" class="rings relative overflow-hidden" style="background-color:var(--dark);color:var(--on-dark)">
+  <img src="assets/kayuperkasabase.jpeg" alt="" aria-hidden="true" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7">
+  <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,20,10,.9),rgba(36,20,10,.3))"></div>
+  <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-5 gap-10 items-center">
+    <div class="md:col-span-3">
+      <p class="font-bold" style="color:var(--mid)">Palembang, Sumatera Selatan</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl mt-3">Kayu olahan dan biomassa dari perusahaan yang bisa dipercaya.</h1>
+      <p class="mt-5 text-lg max-w-xl" style="color:#dcc7a6">Kayu Perkasa Industry adalah merek pemasaran PT. Tiara Indah Perkasa Bersaudara. Kenali profil perusahaan kami, lalu pesan wood chips, wood pellet, dan produk lainnya.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#produk" class="btn btn-mid">Lihat produk</a>
+        <a href="#tentang" class="btn btn-line">Kenali perusahaan</a>
+      </div>
+    </div>
+    <div class="md:col-span-2 grid grid-cols-2 gap-3">
+      <div class="p-5 rounded" style="background:rgba(243,230,208,.1);border:2px solid var(--mid)"><div class="disp text-4xl" style="color:var(--mid)">6</div><div class="text-sm font-semibold mt-1">jenis produk kayu dan biomassa</div></div>
+      <div class="p-5 rounded" style="background:rgba(243,230,208,.1);border:2px solid var(--mid)"><div class="disp text-4xl" style="color:var(--mid)">3</div><div class="text-sm font-semibold mt-1">lini: dagang, jasa, manufaktur</div></div>
+      <div class="p-5 rounded col-span-2" style="background:var(--maroon)"><div class="disp text-xl">“Committed to Serve”</div><div class="text-sm mt-1 font-semibold">Motto kami di setiap pengiriman.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="tentang" class="max-w-6xl mx-auto px-4 py-20">
+  <h2 class="text-3xl md:text-5xl max-w-2xl">Satu situs, dua fungsi</h2>
+  <p class="muted mt-3 max-w-2xl">Sistem informasi ini memperkenalkan PT. Tiara Indah Perkasa Bersaudara sekaligus memasarkan produk olahan kayunya.</p>
+  <div class="grid md:grid-cols-2 gap-5 mt-10">
+    <article class="card rounded-lg p-7"><h3 class="text-2xl">Profil perusahaan</h3><p class="muted mt-3">Visi, misi, struktur organisasi, bidang usaha, dan dokumen legalitas tersaji terbuka agar mitra dapat menilai kredibilitas kami.</p><a href="#profil" class="inline-block mt-5 font-extrabold underline" style="color:var(--maroon)">Baca profil lengkap</a></article>
+    <article class="card rounded-lg p-7 stripe"><h3 class="text-2xl">Pemasaran hasil olahan kayu</h3><p class="muted mt-3">Pilih produk dari katalog, masuk dengan email, lalu kirim permintaan penawaran yang dikonfirmasi lewat WhatsApp.</p><a href="#produk" class="inline-block mt-5 font-extrabold underline" style="color:var(--maroon)">Buka katalog</a></article>
+  </div>
+</section>
+
+<section id="profil" style="background:var(--surface);border-block:3px solid var(--dark)">
+  <div class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-3xl md:text-5xl">Profil PT. Tiara Indah Perkasa Bersaudara</h2>
+    <p class="muted mt-3 max-w-3xl">Perusahaan di Palembang yang bergerak di produksi bahan bakar biomassa, mekanikal elektrikal, oli industri, kimia, suplai umum, dan konstruksi.</p>
+    <div class="grid md:grid-cols-2 gap-5 mt-10">
+      <div class="rounded-lg p-7" style="background:var(--dark);color:var(--on-dark)"><h3 class="text-xl" style="color:var(--mid)">Visi</h3><p class="mt-2 text-lg font-bold">Menjadi perusahaan yang handal, profesional, dan terpercaya.</p></div>
+      <div class="card rounded-lg p-7"><h3 class="text-xl">Misi</h3><ul class="mt-2 space-y-2 muted list-disc pl-5"><li>Melaksanakan budaya kerja yang berlandaskan profesionalitas.</li><li>Meningkatkan dan mengembangkan sistem pelayanan kepada pelanggan.</li><li>Selalu meningkatkan profesionalitas kerja dan loyalitas kepada perusahaan.</li></ul></div>
+    </div>
+    <h3 class="text-2xl mt-14">Struktur organisasi</h3>
+    <div class="mt-6 grid md:grid-cols-3 gap-5">
+      <div class="card rounded-lg p-6"><h4 class="text-lg">Production Engineering</h4><p class="muted text-sm mt-2">AC &amp; HVAC, solar cell, kimia pengolahan air, printing dan advertising, web design.</p></div>
+      <div class="card rounded-lg p-6"><h4 class="text-lg">Administrasi</h4><p class="muted text-sm mt-2">Delivery order, quotation dan forecast, invoice dan PPN, sourcing, evaluasi supplier.</p></div>
+      <div class="card rounded-lg p-6"><h4 class="text-lg">Sales &amp; Service</h4><p class="muted text-sm mt-2">Wood chips, bark, pellet, sawdust, cangkang dan fiber sawit, ampas tebu, kayu karet, batu bara, oli.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="produk" class="max-w-6xl mx-auto px-4 py-20">
+  <h2 class="text-3xl md:text-5xl">Katalog produk Kayu Perkasa</h2>
+  <p class="muted mt-3 max-w-2xl">Spesifikasi dan harga menyesuaikan kebutuhan dan volume. Tambahkan produk ke daftar permintaan untuk meminta penawaran.</p>
+  <div id="filters" class="flex flex-wrap gap-2 mt-6" role="group" aria-label="Filter kategori"></div>
+  <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8"></div>
+  <div class="mt-10 flex flex-col items-center gap-2"><a href="#permintaan" class="btn btn-maroon text-lg !px-8">Kirim Permintaan <span id="cartN">(0)</span></a><p class="text-sm muted">Pilih produk di atas, lalu lanjut ke halaman permintaan.</p></div>
+</section>
+
+<section id="layanan" style="background:var(--surface);border-block:3px solid var(--dark)">
+  <div class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-3xl md:text-5xl">Dari bahan baku sampai tujuan</h2>
+    <div class="grid md:grid-cols-3 gap-5 mt-10">
+      <article class="card rounded-lg p-6"><h3 class="text-xl">Perdagangan</h3><p class="muted text-sm mt-2">Kimia industri, oli dan pelumas, motor dan gearbox, enzim dextranase, tools, cangkang dan fiber sawit, acacia log, kayu karet.</p></article>
+      <article class="card rounded-lg p-6"><h3 class="text-xl">Jasa</h3><p class="muted text-sm mt-2">Transportasi dan ekspedisi dengan armada truk, serta pembuatan mesin wood chipper.</p></article>
+      <article class="card rounded-lg p-6"><h3 class="text-xl">Manufaktur</h3><p class="muted text-sm mt-2">Wood chips, wood pellet, wood bark, sawdust, ampas tebu, dan reject pulp untuk bahan bakar alternatif.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="legalitas" class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-start">
+  <div><h2 class="text-3xl md:text-5xl">Legalitas perusahaan</h2><p class="muted mt-3">Kami beroperasi resmi dan terdaftar. Dokumen asli tersedia atas permintaan.</p></div>
+  <dl class="card rounded-lg">
+    <div class="p-4 flex justify-between gap-4 flex-wrap"><dt>Badan usaha</dt><dd>PT. Tiara Indah Perkasa Bersaudara</dd></div>
+    <div class="p-4 flex justify-between gap-4 flex-wrap border-t-2" style="border-color:var(--line)"><dt>NIB</dt><dd>2204240073969</dd></div>
+    <div class="p-4 flex justify-between gap-4 flex-wrap border-t-2" style="border-color:var(--line)"><dt>NPWP</dt><dd>20.302.871.7-301.000</dd></div>
+    <div class="p-4 flex justify-between gap-4 flex-wrap border-t-2" style="border-color:var(--line)"><dt>SK Kemenkum</dt><dd>AHU-0049375.AH.01.02 Tahun 2025</dd></div>
+    <div class="p-4 flex justify-between gap-4 flex-wrap border-t-2" style="border-color:var(--line)"><dt>Modal dasar</dt><dd>Rp 5.000.000.000</dd></div>
+  </dl>
+</section>
+
+<section id="kontak" style="background:var(--dark);color:var(--on-dark)">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl md:text-4xl">Hubungi kami</h2>
+    <div class="grid md:grid-cols-3 gap-5 mt-8 text-sm">
+      <div><h3 class="text-lg" style="color:var(--mid)">Alamat</h3><p class="mt-2">Jl. Cengkeh II No. 023<br>Palembang, Sumatera Selatan</p></div>
+      <div><h3 class="text-lg" style="color:var(--mid)">Telepon</h3><p class="mt-2">HP: 0821-7625-2642<br>HP: 0812-7863-4888<br>Fax: (0711) 811592</p></div>
+      <div><h3 class="text-lg" style="color:var(--mid)">Email</h3><p class="mt-2 break-all">pttipbpalembang@gmail.com</p></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div id='vLogin' class='hidden max-w-3xl mx-auto px-4 py-12'><a href='#produk' class='btn btn-dark !py-2 !px-4 text-sm'>&larr; Kembali ke katalog</a><h1 class='text-3xl md:text-5xl mt-4'>Login customer</h1><div id='loginBody' class='mt-8'></div></div>
+<!-- ================= HALAMAN PERMINTAAN ================= -->
+<div id="vReq" class="hidden max-w-3xl mx-auto px-4 py-12">
+  <a href="#produk" class="btn btn-dark !py-2 !px-4 text-sm">&larr; Kembali ke katalog</a>
+  <h1 class="text-3xl md:text-5xl mt-4">Daftar permintaan</h1>
+  <div id="reqBody" class="mt-8"></div>
+</div>
+
+<!-- ================= HALAMAN ADMIN ================= -->
+<div id="vAdmin" class="hidden max-w-5xl mx-auto px-4 py-12">
+  <h1 class="sr-only">Panel admin</h1>
+  <div id="adminBody" class="mt-8"></div>
+</div>
+
+<footer id="siteFooter" style="background:#241309;color:#dcc7a6">
+  <div class="max-w-6xl mx-auto px-4 py-8 text-sm flex flex-col md:flex-row md:justify-between gap-3" style="padding-bottom:calc(2rem + env(safe-area-inset-bottom,0px))">
+    <div><span class="disp text-lg" style="color:#fff">KAYU PERKASA INDUSTRY</span><br>Unit pemasaran PT. Tiara Indah Perkasa Bersaudara</div>
+    <div>© 2026 PT. Tiara Indah Perkasa Bersaudara<br><a href="#admin" class="underline">Masuk admin</a></div>
+  </div>
+</footer>
+
+<script>
+const WA='6287737401614', ADMIN_EMAIL='admin@kayuperkasa.id', ADMIN_PASS='KayuPerkasa2026';
+const PHOTO={'Wood Chips':'woodchips.jpeg','Wood Pellet':'woodpellet.jpeg','Wood Bark':'woodbark.jpeg','Sawdust':'sawdust.jpeg','Acacia Log':'acacialog.jpeg','Kayu Karet':'kayukaret.jpeg'};
+const products=[
+ {n:'Wood Chips',c:'Biomassa',d:'Serpihan kayu produksi sendiri untuk bahan bakar boiler dan kebutuhan industri.',h:'#b98a52'},
+ {n:'Wood Pellet',c:'Biomassa',d:'Pelet kayu padat dalam jumbo bag untuk pengiriman jumlah besar.',h:'#9a6a35'},
+ {n:'Wood Bark',c:'Biomassa',d:'Kulit kayu sebagai bahan bakar alternatif, dimuat langsung ke truk.',h:'#5e3a22'},
+ {n:'Sawdust',c:'Biomassa',d:'Serbuk gergaji untuk energi biomassa, termasuk pasokan ke pembangkit listrik.',h:'#cfa56f'},
+ {n:'Acacia Log',c:'Kayu bulat',d:'Kayu bulat akasia untuk bahan baku chipper dan industri kayu.',h:'#7a4a2a'},
+ {n:'Kayu Karet',c:'Kayu bulat',d:'Kayu karet sebagai bahan baku wood chips dan pelet.',h:'#a8774a'}
+];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ls={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const ss={get(k){try{return sessionStorage.getItem(k)}catch(e){return null}},set(k,v){try{sessionStorage.setItem(k,v)}catch(e){}},del(k){try{sessionStorage.removeItem(k)}catch(e){}}};
+let cart=new Set(ls.get('pw_cart',[])),cat='Semua',email=ls.get('pw_email',''),mail=ls.get('pw_mail',''),loginMode='login',reqs=ls.get('pw_reqs',[]),db=null,notice='';
+
+/* ---------- Penyimpanan: database bersama bila tersedia, jika tidak lokal ---------- */
+function setReqs(list){reqs=list.sort((a,b)=>b.createdAt-a.createdAt);route()}
+async function initDb(){
+  try{
+    db=window.claude?await window.claude.use('db'):null;
+    if(db){db.collection('requests').onSnapshot(s=>setReqs(s.docs.map(d=>({id:d.id,...d.data()}))),()=>{})}
+  }catch(e){db=null}
+}
+async function saveReq(r){
+  if(db){await db.collection('requests').doc(r.id).set(r)}
+  else{reqs=[r,...reqs.filter(x=>x.id!==r.id)];ls.set('pw_reqs',reqs)}
+}
+
+/* ---------- Katalog ---------- */
+function ring(h){return `<svg viewBox="0 0 200 110" class="w-full h-40" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="110" fill="${h}"/><g fill="none" stroke="rgba(0,0,0,.25)" stroke-width="3"><circle cx="150" cy="70" r="14"/><circle cx="150" cy="70" r="30"/><circle cx="150" cy="70" r="46"/><circle cx="150" cy="70" r="62"/><circle cx="150" cy="70" r="78"/></g></svg>`}
+function renderCatalog(){
+  const cats=['Semua',...new Set(products.map(p=>p.c))];
+  $('filters').innerHTML=cats.map(c=>`<button class="chip" aria-pressed="${c===cat}" data-c="${c}">${c}</button>`).join('');
+  $('grid').innerHTML=products.filter(p=>cat==='Semua'||p.c===cat).map(p=>{const on=cart.has(p.n);
+    return `<article class="card rounded-lg overflow-hidden flex flex-col"><div class="relative">${ring(p.h)}<img src="assets/${PHOTO[p.n]}" alt="Foto ${p.n}" loading="lazy" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div class="p-5 flex flex-col flex-1"><span class="text-xs font-bold" style="color:var(--maroon)">${p.c}</span><h3 class="text-xl mt-1">${p.n}</h3><p class="muted text-sm mt-2 flex-1">${p.d}</p><button class="btn ${on?'btn-line':'btn-dark'} mt-5 w-full" data-p="${p.n}">${on?'Hapus dari permintaan':'Tambah ke permintaan'}</button></div></article>`}).join('');
+  $('cartN').textContent='('+cart.size+')';
+}
+
+/* ---------- Halaman permintaan ---------- */
+function waUrl(r){return `https://wa.me/${WA}?text=${encodeURIComponent(`Halo, Kayu Perkasa! ${r.email} melanjutkan konfirmasi permintaan ${r.items.join(', ')}. Tertera di website.`)}`}
+function myActive(){return reqs.find(r=>r.email===email&&r.status==='pending')}
+function badge(r){return r.status==='done'?'<span class="badge b-done">Done</span>':'<span class="badge b-pending">Sudah dikonfirmasi ke WhatsApp · Pending</span>'}
+function renderReq(){
+  const b=$('reqBody');if(!email){location.hash='masuk';return}
+  if(!email){
+    b.innerHTML=`<div class="card rounded-lg p-6"><h2 class="text-2xl">Masuk dengan email</h2><p class="muted mt-2">Masuk terlebih dahulu untuk mengirim permintaan. Kami memakai email Anda untuk melacak status permintaan.</p>
+    <label class="block mt-5" for="lEmail">Alamat email</label><input id="lEmail" type="email" class="inp mt-1" placeholder="nama@perusahaan.com" autocomplete="email">
+    <button id="doLogin" class="btn btn-dark mt-4 w-full">Masuk</button><p id="lMsg" class="mt-3 font-bold" style="color:var(--maroon)" role="status"></p></div>`;return}
+  const act=myActive(), mine=reqs.filter(r=>r.email===email);
+  let h=`<div class="flex items-center justify-between gap-3 flex-wrap"><p class="font-bold">Masuk sebagai ${esc(email)}</p><button id="logout" class="underline font-bold">Keluar</button></div>`;
+  if(notice){h+=`<div class="rounded-lg p-4 mt-4 font-bold" style="background:var(--maroon);color:#fff" role="alert">${esc(notice)}</div>`}
+  if(act){h+=`<div class="card rounded-lg p-6 mt-4 stripe"><h2 class="text-xl">Permintaan Anda sedang diproses</h2><p class="muted mt-2">Anda hanya dapat mengirim satu permintaan dalam satu waktu. Tunggu admin menandai permintaan ini <b>Done</b> sebelum mengirim yang baru.</p><div class="mt-3">${badge(act)}</div><p class="mt-3 text-sm"><b>Produk:</b> ${act.items.map(esc).join(', ')}</p><a href="${waUrl(act)}" target="_blank" rel="noopener noreferrer" class="btn btn-maroon mt-4 w-full">Buka WhatsApp untuk konfirmasi</a></div>`}
+  else{
+    h+=`<div class="rounded-lg p-4 mt-4 font-bold" style="background:var(--surface);border:2px dashed var(--maroon)">Pengingat: permintaan hanya bisa dikirim satu kali. Permintaan baru baru dapat dikirim setelah yang sebelumnya selesai (Done).</div>
+    <div class="card rounded-lg p-6 mt-4"><h2 class="text-xl">Produk dipilih</h2><ul id="cartList" class="mt-3 space-y-2">${cart.size?[...cart].map(n=>`<li class="flex justify-between items-center p-3 rounded" style="background:var(--base)"><b>${esc(n)}</b><button class="underline font-bold text-sm" data-r="${esc(n)}">Hapus</button></li>`).join(''):'<li class="muted">Belum ada produk. <a href="#produk" class="underline font-bold">Pilih dari katalog</a>.</li>'}</ul>
+    <label class="block mt-5" for="fName">Nama / perusahaan (opsional)</label><input id="fName" class="inp mt-1" autocomplete="organization">
+    <label class="block mt-4" for="fQty">Perkiraan volume dan lokasi pengiriman</label><textarea id="fQty" rows="3" class="inp mt-1" placeholder="Contoh: 500 ton per bulan, tujuan Palembang"></textarea>
+    <button id="send" class="btn btn-maroon mt-5 w-full">Kirim &amp; konfirmasi lewat WhatsApp</button></div>`}
+  if(mine.length){h+=`<h2 class="text-xl mt-10">Riwayat permintaan</h2><ul class="mt-3 space-y-2">${mine.map(r=>`<li class="card rounded-lg p-4 flex justify-between gap-3 flex-wrap"><span><b>${r.items.map(esc).join(', ')}</b><br><span class="text-sm muted">${new Date(r.createdAt).toLocaleString('id-ID')}</span></span>${badge(r)}</li>`).join('')}</ul>`}
+  b.innerHTML=h;
+}
+async function sendReq(){
+  notice='';
+  if(myActive()){notice='Selesaikan permintaan sebelumnya terlebih dahulu.';return renderReq()}
+  const name=$('fName').value.trim(),q=$('fQty').value.trim();
+  if(!cart.size){notice='Pilih minimal satu produk dari katalog.';return renderReq()}
+  const w=null;
+  const r={id:'r'+Date.now(),email,mail,name:name||email,note:q,items:[...cart],status:'pending',createdAt:Date.now()};
+  try{await saveReq(r)}catch(e){if(w)w.close();notice='Permintaan gagal disimpan. Coba lagi.';return renderReq()}
+  const text=`Halo, Kayu Perkasa! ${email} melanjutkan konfirmasi permintaan ${r.items.join(', ')}. Tertera di website.`;
+  cart.clear();ls.set('pw_cart',[]);renderCatalog();
+  try{window.open(waUrl(r),'_blank','noopener')}catch(e){}
+  notice='Permintaan tersimpan. Jika WhatsApp belum terbuka, tekan tombol Buka WhatsApp di bawah.';renderReq();
+}
+
+/* ---------- Login customer ---------- */
+function updateAuth(){$('authBtn').textContent=email?'Keluar':'Masuk';const h=$('hello');h.textContent=email?'Halo! '+email:'';h.classList.toggle('hidden',!email)}
+function renderLoginOld(){
+  if(email){location.hash='permintaan';return}
+  if($('lEmail'))return;
+  $('loginBody').innerHTML=`<div class='card rounded-lg p-6 max-w-md'><span class='badge b-pending'>Khusus customer</span><h2 class='text-2xl mt-3'>Masuk dengan email</h2><p class='muted mt-2'>Masuk untuk mengirim permintaan penawaran dan melihat status permintaan Anda.</p><label class='block mt-5' for='lEmail'>Alamat email</label><input id='lEmail' type='email' class='inp mt-1' placeholder='nama@perusahaan.com' autocomplete='email'><button id='doLogin' class='btn btn-dark mt-4 w-full'>Masuk sebagai customer</button><p id='lMsg' class='mt-3 font-bold' style='color:var(--maroon)' role='status'></p></div>`;
+}
+
+/* ---------- Akun customer (username) ---------- */
+const accts=()=>ls.get('pw_accts',[]);
+const ekey=m=>m.replace(/[^a-z0-9]/g,'_');
+async function sha(p,u){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(u+':'+p));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+async function getAcct(u){await window.dbReady;if(db){const s=await db.doc('accounts/'+u).get();return s.exists?s.data():null}return accts().find(a=>a.username===u)||null}
+async function emailUsed(m){await window.dbReady;if(db){const s=await db.doc('emails/'+ekey(m)).get();return s.exists}return accts().some(a=>a.mail===m)}
+async function createAcct(a){await window.dbReady;if(db){await db.doc('accounts/'+a.username).set(a);await db.doc('emails/'+ekey(a.mail)).set({username:a.username})}else{ls.set('pw_accts',[...accts(),a])}}
+function drawLogin(){
+  const L=loginMode==='login';
+  $('loginBody').innerHTML=`<div class='card rounded-lg p-6 max-w-md'><div class='flex gap-2'><button id='tabL' class='chip' aria-pressed='${L}'>Masuk</button><button id='tabR' class='chip' aria-pressed='${!L}'>Daftar akun</button></div><span class='badge b-pending mt-4'>Khusus customer</span>`+(L?`<h2 class='text-2xl mt-3'>Masuk dengan username</h2><label class='block mt-4' for='uName'>Username</label><input id='uName' class='inp mt-1' autocomplete='username'><label class='block mt-4' for='uPass'>Kata sandi</label><input id='uPass' type='password' class='inp mt-1' autocomplete='current-password'><button id='uLogin' class='btn btn-dark mt-4 w-full'>Masuk</button>`:`<h2 class='text-2xl mt-3'>Buat akun baru</h2><p class='muted mt-2'>Email dipakai untuk memastikan satu email hanya untuk satu akun. Setelah daftar, Anda masuk dengan username dan kata sandi.</p><label class='block mt-4' for='uName'>Username</label><input id='uName' class='inp mt-1' autocomplete='username' placeholder='huruf kecil, angka, _ atau .'><label class='block mt-4' for='rMail'>Email</label><input id='rMail' type='email' class='inp mt-1' autocomplete='email' placeholder='nama@perusahaan.com'><label class='block mt-4' for='rPass'>Kata sandi (minimal 6 karakter)</label><input id='rPass' type='password' class='inp mt-1' autocomplete='new-password'><button id='uReg' class='btn btn-maroon mt-4 w-full'>Daftar dan masuk</button>`)+`<p id='lMsg' class='mt-3 font-bold' style='color:var(--maroon)' role='status'></p></div>`;
+}
+function renderLogin(){if(email){location.hash='permintaan';return}if($('uName'))return;drawLogin()}
+function doneLogin(a){email=a.username;mail=a.mail;ls.set('pw_email',email);ls.set('pw_mail',mail);notice='';updateAuth();location.hash='permintaan'}
+
+/* ---------- Halaman admin (terpisah, hanya database) ---------- */
+function renderAdmin(){
+  const b=$('adminBody');
+  if(ss.get('pw_admin')!=='1'){
+    if($('aGo'))return;
+    b.innerHTML=`<a href='#beranda' class='btn btn-line !py-2 !px-4 text-sm'>&larr; Kembali ke situs</a><div class='card rounded-lg p-6 max-w-md mt-6'><span class='badge b-done'>Khusus admin</span><h2 class='text-2xl mt-3'>Login admin</h2><label class='block mt-4' for='aE'>Email admin</label><input id='aE' type='email' class='inp mt-1' autocomplete='username'><label class='block mt-4' for='aP'>Kata sandi</label><input id='aP' type='password' class='inp mt-1' autocomplete='current-password'><button id='aGo' class='btn btn-dark mt-5 w-full'>Masuk sebagai admin</button><p id='aMsg' class='mt-3 font-bold' style='color:var(--maroon)' role='status'></p></div>`;return}
+  const pend=reqs.filter(r=>r.status==='pending').length,done=reqs.length-pend;
+  b.innerHTML=`<div class='flex items-center justify-between gap-3 p-4 rounded-lg' style='background:var(--dark);color:var(--on-dark)'><span class='disp text-lg'>KAYU PERKASA · DATABASE PERMINTAAN</span><span class='flex gap-2'><a href='#beranda' class='btn btn-line !py-1.5 !px-3 text-sm'>&larr; Kembali ke situs</a><button id='aOut' class='btn btn-line !py-1.5 !px-3 text-sm'>Keluar</button></span></div><div class='grid grid-cols-3 gap-3 mt-4'><div class='card rounded-lg p-4'><div class='disp text-3xl'>${reqs.length}</div><div class='text-sm muted'>Total</div></div><div class='card rounded-lg p-4'><div class='disp text-3xl' style='color:var(--maroon)'>${pend}</div><div class='text-sm muted'>Pending</div></div><div class='card rounded-lg p-4'><div class='disp text-3xl'>${done}</div><div class='text-sm muted'>Done</div></div></div><p class='text-xs muted mt-2'>${db?'Data dari database bersama.':'Mode lokal: hanya data dari perangkat ini.'}</p><div class='mt-4 space-y-3'>${reqs.length?reqs.map(r=>`<div class='card rounded-lg p-5'><div class='flex justify-between gap-3 flex-wrap items-start'><div><h3 class='text-lg'>${esc(r.name)}</h3><p class='text-sm muted'>@${esc(r.email)} · ${esc(r.mail||'-')} · ${new Date(r.createdAt).toLocaleString('id-ID')}</p></div>${badge(r)}</div><p class='mt-3 text-sm'><b>Produk:</b> ${r.items.map(esc).join(', ')}</p><p class='text-sm'><b>Catatan:</b> ${esc(r.note||'-')}</p><div class='mt-4 flex items-center gap-2 flex-wrap'><span class='text-sm font-bold'>Ubah status:</span><button class='chip' aria-pressed='${r.status==='pending'}' data-st='${esc(r.id)}|pending'>Pending</button><button class='chip' aria-pressed='${r.status==='done'}' data-st='${esc(r.id)}|done'>Done</button></div></div>`).join(''):'<p class="muted">Belum ada permintaan masuk.</p>'}</div>`;
+}
+
+/* ---------- (lama) ---------- */
+function renderAdminOld(){
+  const b=$('adminBody');
+  if(ss.get('pw_admin')!=='1'){
+    b.innerHTML=`<div class="card rounded-lg p-6 max-w-md"><h2 class="text-2xl">Login admin</h2>
+    <label class="block mt-4" for="aE">Email admin</label><input id="aE" type="email" class="inp mt-1" autocomplete="username">
+    <label class="block mt-4" for="aP">Kata sandi</label><input id="aP" type="password" class="inp mt-1" autocomplete="current-password">
+    <button id="aGo" class="btn btn-dark mt-5 w-full">Masuk</button><p id="aMsg" class="mt-3 font-bold" style="color:var(--maroon)" role="status"></p></div>`;return}
+  const pend=reqs.filter(r=>r.status==='pending').length;
+  b.innerHTML=`<div class="flex items-center justify-between flex-wrap gap-3"><p class="font-bold">${reqs.length} permintaan · ${pend} pending</p><button id="aOut" class="underline font-bold">Keluar</button></div>
+  <p class="text-xs muted mt-1">${db?'Data dari database bersama.':'Mode lokal: hanya menampilkan data dari perangkat ini.'}</p>
+  <div class="mt-5 space-y-3">${reqs.length?reqs.map(r=>`<div class="card rounded-lg p-5"><div class="flex justify-between gap-3 flex-wrap items-start"><div><h3 class="text-lg">${esc(r.name)}</h3><p class="text-sm muted">${esc(r.email)} · ${new Date(r.createdAt).toLocaleString('id-ID')}</p></div>${badge(r)}</div><p class="mt-3 text-sm"><b>Produk:</b> ${r.items.map(esc).join(', ')}</p><p class="text-sm"><b>Catatan:</b> ${esc(r.note||'-')}</p>${r.status==='pending'?`<button class="btn btn-dark mt-4 !py-2" data-done="${esc(r.id)}">Tandai Done</button>`:''}</div>`).join(''):'<p class="muted">Belum ada permintaan masuk.</p>'}</div>`;
+}
+
+/* ---------- Router ---------- */
+function route(){
+  const h=location.hash.slice(1);
+  const pg=['permintaan','admin','masuk'].includes(h);$('vHome').classList.toggle('hidden',pg);$('vLogin').classList.toggle('hidden',h!=='masuk');$('siteHeader').classList.toggle('hidden',h==='admin');$('siteFooter').classList.toggle('hidden',h==='admin');
+  $('vReq').classList.toggle('hidden',h!=='permintaan');
+  $('vAdmin').classList.toggle('hidden',h!=='admin');
+  if(h==='permintaan')renderReq();
+  else if(h==='admin')renderAdmin();else if(h==='masuk')renderLogin();
+  else if(h&&$(h))$(h).scrollIntoView();
+}
+addEventListener('hashchange',()=>{notice='';route();if(!['permintaan','admin'].includes(location.hash.slice(1))&&!location.hash)scrollTo(0,0)});
+
+/* ---------- Event ---------- */
+document.addEventListener('click',async e=>{
+  const t=e.target.closest('button,[data-c],[data-p],[data-r]');if(!t)return;
+  const d=t.dataset;
+  if(d.c){cat=d.c;renderCatalog()}
+  if(d.p){cart.has(d.p)?cart.delete(d.p):cart.add(d.p);ls.set('pw_cart',[...cart]);renderCatalog()}
+  if(d.r){cart.delete(d.r);ls.set('pw_cart',[...cart]);renderCatalog();renderReq()}
+  if(d.st){const [sid,sst]=d.st.split('|');const r=reqs.find(x=>x.id===sid);if(r){const u={...r,status:sst,updatedAt:Date.now()};if(db){await db.collection('requests').doc(r.id).set(u)}else{reqs=reqs.map(x=>x.id===r.id?u:x);ls.set('pw_reqs',reqs);renderAdmin()}}}if(d.done){const r=reqs.find(x=>x.id===d.done);if(r){const u={...r,status:'done',doneAt:Date.now()};
+    if(db){await db.collection('requests').doc(r.id).set(u)}else{reqs=reqs.map(x=>x.id===r.id?u:x);ls.set('pw_reqs',reqs);renderAdmin()}}}
+  switch(t.id){
+   case 'tabL':loginMode='login';drawLogin();break;
+   case 'tabR':loginMode='reg';drawLogin();break;
+   case 'uLogin':{const u=$('uName').value.trim().toLowerCase(),m=$('lMsg');if(!u){m.textContent='Masukkan username.';break}const a=await getAcct(u);if(!a){m.textContent='Username belum terdaftar. Silakan daftar akun dulu.';break}if(a.ph!==await sha($('uPass').value,u)){m.textContent='Kata sandi salah.';break}doneLogin(a);break}
+   case 'uReg':{const u=$('uName').value.trim().toLowerCase(),mm=$('rMail').value.trim().toLowerCase(),m=$('lMsg');
+    if(!/^[a-z0-9_.]{3,20}$/.test(u)){m.textContent='Username 3 sampai 20 karakter: huruf kecil, angka, _ atau .';break}
+    if(!mm.includes('@')||!mm.includes('.')||mm.includes(' ')){m.textContent='Masukkan email yang valid.';break}
+    if(await getAcct(u)){m.textContent='Username sudah dipakai. Pilih username lain.';break}
+    if(await emailUsed(mm)){m.textContent='Email ini sudah pernah dipakai untuk mendaftar. Silakan masuk dengan username Anda.';break}
+    const pw=$('rPass').value;if(pw.length<6){m.textContent='Kata sandi minimal 6 karakter.';break}const a={username:u,mail:mm,ph:await sha(pw,u),createdAt:Date.now()};try{await createAcct(a)}catch(err){m.textContent='Pendaftaran gagal. Coba lagi.';break}doneLogin(a);break}
+   case 'doLoginOld':{const v=$('lEmail').value.trim().toLowerCase();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){$('lMsg').textContent='Masukkan alamat email yang valid.';break}email=v;ls.set('pw_email',v);notice='';updateAuth();location.hash='permintaan';break}
+   case 'logout':email='';ls.set('pw_email','');notice='';updateAuth();renderReq();break;
+   case 'send':sendReq();break;case 'authBtn':if(email){email='';ls.set('pw_email','');notice='';updateAuth();if(location.hash==='#permintaan')route()}else location.hash='masuk';break;
+   case 'aGo':if($('aE').value.trim().toLowerCase()===ADMIN_EMAIL&&$('aP').value===ADMIN_PASS){ss.set('pw_admin','1');renderAdmin()}else $('aMsg').textContent='Email atau kata sandi salah.';break;
+   case 'aOut':ss.del('pw_admin');renderAdmin();break;
+   case 'menuBtn':{const o=$('mobileNav').classList.toggle('hidden');t.setAttribute('aria-expanded',String(!o));break}
+  }
+  if(t.closest('#mobileNav'))$('mobileNav').classList.add('hidden');
+});
+$('mobileNav').addEventListener('click',e=>{if(e.target.tagName==='A')$('mobileNav').classList.add('hidden')});
+renderCatalog();updateAuth();route();window.dbReady=initDb();
+</script>
+<div id='aiWrap'>
+<button id='aiOpen' class='btn btn-maroon' style='position:fixed;z-index:50;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));box-shadow:0 4px 0 var(--dark)' aria-expanded='false' aria-controls='aiPanel'>Tanya AI</button>
+<section id='aiPanel' class='hidden card rounded-lg flex flex-col' style='position:fixed;z-index:60;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));width:min(24rem,calc(100vw - 2rem));height:min(34rem,calc(100dvh - 5rem));overflow:hidden' role='dialog' aria-label='Asisten Kayu Perkasa'>
+<div class='flex items-center justify-between px-4 py-3' style='background:var(--dark);color:var(--on-dark)'><div><div class='disp text-base'>Asisten Kayu Perkasa</div><div class='text-xs' style='color:#dcc7a6'>Tanya soal profil, produk, dan cara pesan</div></div><button id='aiClose' class='text-2xl leading-none px-2' aria-label='Tutup'>&times;</button></div>
+<div id='aiMsgs' class='flex-1 overflow-y-auto p-3 space-y-2 text-sm' aria-live='polite'></div>
+<div id='aiChips' class='px-3 pb-2 flex flex-wrap gap-2'></div>
+<div class='p-3 flex gap-2' style='border-top:2px solid var(--dark)'><input id='aiIn' class='inp' placeholder='Tulis pertanyaan Anda' maxlength='300' autocomplete='off'><button id='aiSend' class='btn btn-dark !px-4'>Kirim</button></div>
+</section></div>
+<script>
+(()=>{
+const SYS=`Kamu adalah asisten website Kayu Perkasa Industry, unit pemasaran PT. Tiara Indah Perkasa Bersaudara (Palembang). Jawab dalam bahasa Indonesia yang ramah dan jelas, sesuaikan panjang dan isi jawaban dengan pertanyaan (pertanyaan singkat dijawab singkat, maksimal 4 kalimat kecuali diminta rinci). Gunakan hanya fakta di bawah. Jika informasinya tidak ada, katakan belum ada informasinya dan arahkan ke WhatsApp +62 877-3740-1614. Jangan mengarang harga, stok, atau spesifikasi teknis. Jika pertanyaan di luar topik perusahaan atau website ini, tolak dengan sopan dan tawarkan bantuan seputar Kayu Perkasa. Format teks biasa; boleh **tebal** dan daftar dengan tanda minus.\nFAKTA PERUSAHAAN: PT. Tiara Indah Perkasa Bersaudara, Jl. Cengkeh II No. 023 Palembang, Sumatera Selatan. HP 0821-7625-2642 dan 0812-7863-4888, fax (0711) 811592, email pttipbpalembang@gmail.com. Bidang: produksi bahan bakar biomassa, mekanikal elektrikal, oli industri, kimia, suplai umum, konstruksi. Visi: menjadi perusahaan yang handal, profesional, dan terpercaya. Motto: Committed to Serve. Struktur: Direktur membawahi Production Engineering, Administrasi, dan Sales & Service. Lini usaha: perdagangan (kimia industri, oli dan pelumas, motor dan gearbox, enzim dextranase, tools, cangkang sawit, fiber sawit, acacia log, kayu karet), jasa (transportasi dan ekspedisi, pembuatan mesin wood chipper), manufaktur (wood chips, wood pellet, wood bark, sawdust, ampas tebu, reject pulp). Katalog website: Wood Chips, Wood Pellet, Wood Bark, Sawdust (biomassa), Acacia Log, Kayu Karet (kayu bulat). Legalitas: NIB 2204240073969, NPWP 20.302.871.7-301.000, SK Kemenkum AHU-0049375.AH.01.02 Tahun 2025, modal dasar Rp 5.000.000.000.\nCARA PAKAI WEBSITE: 1) Pilih produk di katalog. 2) Klik Kirim Permintaan. 3) Jika belum punya akun, daftar dengan username, email, dan kata sandi minimal 6 karakter; satu email hanya untuk satu akun. Login memakai username dan kata sandi. 4) Isi volume dan lokasi pengiriman lalu kirim; WhatsApp ke +62 877-3740-1614 terbuka dengan pesan otomatis, atau tekan tombol Buka WhatsApp. 5) Status permintaan Pending sampai admin menandainya Done. Hanya boleh satu permintaan aktif per akun; permintaan baru bisa dikirim setelah yang sebelumnya Done. Harga dan spesifikasi menyesuaikan kebutuhan dan volume, diberikan lewat penawaran.`;
+const FAQ=[[/harga|biaya|price/,'Harga menyesuaikan kebutuhan dan volume. Tambahkan produk ke daftar permintaan, lalu admin akan memberi penawaran lewat WhatsApp.'],[/daftar|akun|login|masuk|username/,'Klik Masuk di atas, pilih tab Daftar akun, isi username, email, dan kata sandi (minimal 6 karakter). Satu email hanya untuk satu akun.'],[/status|pending|done/,'Pending berarti permintaan sudah dikonfirmasi ke WhatsApp dan menunggu admin. Done berarti admin sudah menyelesaikannya, dan Anda boleh mengirim permintaan baru.'],[/pesan|order|kirim|permintaan|beli/,'Pilih produk di katalog, klik Kirim Permintaan, masuk dengan akun, isi volume dan tujuan, lalu konfirmasi lewat WhatsApp. Satu akun hanya boleh punya satu permintaan aktif.'],[/produk|katalog|wood|pellet|chip|bark|sawdust|kayu|acacia/,'Katalog kami: Wood Chips, Wood Pellet, Wood Bark, Sawdust, Acacia Log, dan Kayu Karet.'],[/alamat|kontak|telepon|wa|whatsapp|email|lokasi/,'Kami di Jl. Cengkeh II No. 023 Palembang. HP 0821-7625-2642 atau 0812-7863-4888, email pttipbpalembang@gmail.com.'],[/legal|nib|npwp|izin/,'NIB 2204240073969, NPWP 20.302.871.7-301.000, SK Kemenkum AHU-0049375.AH.01.02 Tahun 2025.'],[/visi|misi|profil|tentang|perusahaan/,'Visi kami: menjadi perusahaan yang handal, profesional, dan terpercaya, dengan motto Committed to Serve.']];
+const local=q=>{q=q.toLowerCase();for(const [re,a] of FAQ)if(re.test(q))return a;return 'Maaf, saya belum punya informasi itu. Silakan hubungi kami lewat WhatsApp +62 877-3740-1614.'};
+const fmt=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/^- /gm,'\u2022 ').replace(/\n/g,'<br>');
+const $a=id=>document.getElementById(id);
+let sample=null,hist=[],busy=false,started=false;
+if(window.claude)window.claude.use('sample').then(s=>{sample=s}).catch(()=>{});
+function bubble(role,html){const d=document.createElement('div');d.className='p-3 rounded-lg max-w-[88%] '+(role==='u'?'ml-auto':'');d.style.cssText=role==='u'?'background:var(--dark);color:var(--on-dark)':'background:var(--base);border:2px solid var(--line)';d.innerHTML=html;$a('aiMsgs').appendChild(d);$a('aiMsgs').scrollTop=1e9;return d}
+function chips(){$a('aiChips').innerHTML=['Cara pesan produk?','Produk apa saja?','Apa arti status Pending?','Cara daftar akun?'].map(c=>`<button class='chip' data-q='${c}'>${c}</button>`).join('')}
+async function ask(q){
+  q=q.trim();if(!q||busy)return;busy=true;$a('aiChips').innerHTML='';$a('aiIn').value='';
+  bubble('u',esc(q));hist.push({role:'user',content:q});
+  const b=bubble('a','Sedang mengetik\u2026');let ans='';
+  try{
+    if(!sample)throw 0;
+    const turns=hist.slice(-5).map(m=>({...m}));turns[0].content=SYS+'\n\nPERCAKAPAN:\n'+turns[0].content;
+    const r=await sample(turns,{cache:false,modelTier:'quick',onText:({text})=>{b.innerHTML=fmt(text);$a('aiMsgs').scrollTop=1e9}});
+    ans=r.text;
+  }catch(e){ans=local(q)}
+  b.innerHTML=fmt(ans);hist.push({role:'assistant',content:ans});busy=false;$a('aiMsgs').scrollTop=1e9;
+}
+function open(o){$a('aiPanel').classList.toggle('hidden',!o);$a('aiOpen').classList.toggle('hidden',o);$a('aiOpen').setAttribute('aria-expanded',String(o));
+  if(o){if(!started){started=true;bubble('a','Halo! Saya asisten Kayu Perkasa. Tanyakan apa saja tentang profil perusahaan, produk, atau cara memesan di website ini.');chips()}$a('aiIn').focus()}}
+$a('aiOpen').onclick=()=>open(true);$a('aiClose').onclick=()=>open(false);
+$a('aiSend').onclick=()=>ask($a('aiIn').value);
+$a('aiIn').addEventListener('keydown',e=>{if(e.key==='Enter')ask(e.target.value);if(e.key==='Escape')open(false)});
+$a('aiChips').addEventListener('click',e=>{const c=e.target.closest('[data-q]');if(c)ask(c.dataset.q)});
+const vis=()=>{$a('aiWrap').classList.toggle('hidden',location.hash==='#admin')};addEventListener('hashchange',vis);vis();
+})();
+</script>
+</body>
+</html>
